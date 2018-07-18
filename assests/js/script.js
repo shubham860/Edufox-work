@@ -1,3 +1,5 @@
+AOS.init();
+
 function smoothScroll(e){
 e.preventDefault();
 // $()outside to capture the dom element
