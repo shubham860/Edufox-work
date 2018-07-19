@@ -99,7 +99,7 @@ section{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
 }
 
 /* Track */
@@ -240,7 +240,6 @@ td {
         margin-top: 0;
     }
 }
-
 .jumbotron{
 background-color: white;
 }
