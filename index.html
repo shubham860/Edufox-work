@@ -20,7 +20,7 @@
 </head>
 <body data-spy="scroll" data-target="navbar" data-offset="50"  style="overflow-x:hidden;overflow-y:scroll;height:380px;">
 
-     <nav class="navbar navbar-inverse navbar-fixed-top">
+     <nav class="navbar navbar-inverse ">
          <div class="container-fluid">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#1d809f;border-style:solid;border-color:#1d809f;">
@@ -43,10 +43,8 @@
 
     <div class="container-fluid" id="home">
       <header class="masthead">
-      <div class="container text-center my-auto" data-aos="zoom-in-down" data-aos-duration="1500">
-        <img src="assests\images\favicon.png" alt="logo" style:height="100px;">
-        <h1 class="mb-1"><b>EDUFOX</b></h1>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <div class="container-fluid text-center my-auto" data-aos="zoom-in-down" data-aos-duration="1500">
+        <h1 class="mb-1"><b><img src="assests\images\favicon.png" alt="logo" style="width:70px;"><br />EDUFOX<br /><a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a></b></h1>
       </div>
       <div class="overlay"></div>
     </header>
@@ -55,7 +53,8 @@
 
     <section id="testimonials">
       <div>
-        <br /><br /><br /><br /><br />
+        <br /><br />
+
         <h1 class="text-center" style="font-size: 50px;"data-aos="zoom-out" data-aos-duration="1000"><b><span class="glyphicon glyphicon-send"></span>  Testimonials</b></h1>
         <div class="row" style="margin-top:40px;">
           <div class="col-md-6" >
@@ -96,15 +95,16 @@
            </div>
        </section>
 
-
+<br />
     <section id="about">
       <div>
-      <br /><br /><br /><br /><br />
+        <br /><br />
+
         <h1 class="text-center" style="font-size: 50px;"data-aos="zoom-out" data-aos-duration="1000"><b><span class="glyphicon glyphicon-user"></span>  About <span style="color:#00b554">EDUFOX</span></b></h1>
         <br />
         <div class="container-fluid">
           <div class="row container-fluid" data-aos="zoom-in-left" data-aos-duration="1000">
-              <ul style="font-size:20px;">
+              <ul style="font-size:20px; list-style-type: circle;" >
                 <li>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 </li>
@@ -122,7 +122,7 @@
                 <div class="jumbotron" id="jumbo">
                   <h4><b> <span class="glyphicon glyphicon-screenshot"></span> Mission</b></h4>
                   <hr />
-                  <ul style="font-size:20px;">
+                  <ul style="font-size:20px;" class="list-unstyled">
                     <li>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum htext ever since the 1500s.</p>
                     </li>
@@ -133,7 +133,7 @@
                 <div class="jumbotron" id="jumbo">
                   <h4><b><span class="glyphicon glyphicon-eye-open"></span> Vision</b></h4>
                   <hr />
-                  <ul style="font-size:20px;">
+                  <ul style="font-size:20px;" class="list-unstyled">
                     <li>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the 1500s.</p>
                     </li>
@@ -144,7 +144,7 @@
                 <div class="jumbotron" id="jumbo">
                   <h4><b> <span class="glyphicon glyphicon-fire"></span> Performance</b></h4>
                   <hr />
-                  <ul style="font-size:20px;">
+                  <ul style="font-size:20px;" class="list-unstyled">
                     <li>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  ever since the 1500s.</p>
                     </li>
@@ -156,58 +156,45 @@
         </div>
       </div>
     </section>
-
-
-    <section id="contact">
+    <section id="contact" style="background-color:#f3f8fa;height:500px;">
       <div>
         <br />
         <h1 class="text-center"><b><span class="glyphicon glyphicon-earphone"></span>  Contact Us!</b></a></h1>
-        <br />
+          <br />
         <div class="container">
           <div class="row">
-
-            <div class="col-md-4 col-md-offset-2">
-              <div class="container jumbotron">
-              <div class="">
-               <form action="" class="text-center">
-               <div class="row">
-              <div id="col-75">
-                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
-               </div>
-             </div>
-           <div class="row">
-            <div id="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <div class="col-md-6">
+              <div class="jumbotron" id="jumbo2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p style="font-size:20px;">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scr electroni typesetting, remaining essentially unchanged.
+                  </p>
+              </div>
             </div>
-          </div>
-        <div class="row">
-          <div id="col-75">
-            <select id="country" name="country">
-                <option value="australia">India</option>
-                <option value="canada">England</option>
-               <option value="usa">China</option>
-            </select>
+        <div class="col-md-6">
+        <table class="table" cellspacing="-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <tbody>
+            <tr >
+            <td id="tr"><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+            </tr>
+            <tr>
+            <td id="tr"><input type="Email" id="Email" name="Email" placeholder="Your Email.."></td>
+            </tr>
+            <tr>
+            <td id="tr">
+              <select id="country" name="country">
+                  <option value="australia">India</option>
+                  <option value="canada">England</option>
+                 <option value="usa">China</option>
+              </select></td>
+            </tr>
+            <tr>
+            <td id="tr"> <input type="submit" id="submit" value="Submit"></td>
+            </tr>
+          </tbody>
+        </table>
          </div>
-          </div>
-        <div class="row">
-          <div id="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-          </div>
         </div>
-        <div>
-            <input type="submit" id="submit" value="Submit">
         </div>
-       </form>
-             </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-md-offset-2">
-
-          </div>
-             </div>
-          </div>
-        </div>
-    </section>
 
 
     <script type="text/javascript" src="assests/js/script.js"></script>

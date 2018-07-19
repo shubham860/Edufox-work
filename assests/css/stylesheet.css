@@ -5,21 +5,37 @@ body{
   font-family: 'Montserrat', sans-serif!important;
 }
 
+section{
+  outline: none;
+}
+
 #home{
   background-image: url('..\\images\\backs.jpg');
      height:100vh;
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
+     margin-left: auto;
+   margin-right: auto;
+
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 
 .masthead{
-  margin-top: 25em;
+
 }
 
 .mb-1{
   font-size:70px;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #about{
@@ -29,7 +45,7 @@ body{
 #jumbo{
   height:280px;
   backrgound-color:#eee;
-  border: 2px solid #ccc;
+  border: 2px solid #00b554;
   background-color:  #eee;
   border-radius: 5px;
   padding: 16px;
@@ -170,52 +186,56 @@ body{
     box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text],input[type=Email],select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 2px solid  white;
     border-bottom:  2px solid  #1d809f;
     border-radius: 0px;
+    outline: none;
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
 
-
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #1d809f;
     color: white;
     padding: 12px 20px;
     cursor: pointer;
     text-align: center;
+    outline: none;
+    border: 1px solid #1d809f;
+    border-radius: 5px;
+    float:right;
 
 
 }
 
-input[type=submit]:hover {
-    background-color:  #4CAF50;
-}
 
 .container {
     border-radius: 8px;
-    background-color::#00b554;
+    background-color:white;
     padding: 20px;
+    height:350px;
 }
 
 
-#col-75 {
-    float: left;
-    width: 75%;
+td {
+
+    width: 60%;
     margin-top: 6px;
 }
 
 /* Clear floats after the columns */
 .row:after {
     content: "";
-    display: table;
+    display: ;
     clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    #col-75, input[type=submit] {
+    td, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
@@ -223,6 +243,17 @@ input[type=submit]:hover {
 
 .jumbotron{
 background-color: white;
-border: 4px solid   #1d809f;
-border-radius: 0px;
+}
+
+#tr{
+  border: 1px solid white;
+}
+
+#jumbo2{
+  border: 2px solid#1d809f;
+  border-radius: 0px;
+  height:314px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
